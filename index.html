@@ -8,18 +8,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="refresh" content="600">
         <title>City Sport club</title>
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="js/main.js"></script>
     </head>
-    <body>
+    <body> 
         <header>
             <div class="mobile-menu">
                 <i class='fa fa-bars' id="menu-icon" onclick="toggleMenu()"></i>
                 <img src="images/logo.jpg" alt="logo" class="logo" height=48>
                 <a class="home-icon" href="index.html"><i class="fa fa-home"></i></a>
             </div>
-           <nav class="main-menu">
+           <nav class="main-menu" id="navbar">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="news.html">News</a></li>
@@ -31,21 +31,37 @@
                 </ul>
             </nav>
         </header>
-        <main>
-            <article class="story main-story">
-                <h1>Welcome to City Spport Club</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dicta maiores ut est quisquam impedit molestiae iste laboriosam tenetur ducimus eaque doloribus debitis nesciunt blanditiis rerum, eveniet ad voluptates veniam!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore hic dolor, assumenda voluptatibus vel vero, odio voluptas explicabo sunt temporibus ipsam magnam, blanditiis exercitationem quisquam rem sed non? Voluptatibus, dolor!</p>
-            </article>
-            <img src="images/pexels-pixabay-220383.jpg" alt="city club basketball" class="story-photo main-photo">
-            
-            <article class="story side-story">
-                <h2>Awesome Winning strategy</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dicta maiores ut est quisquam impedit molestiae iste laboriosam tenetur ducimus eaque doloribus debitis nesciunt blanditiis rerum, eveniet ad voluptates veniam!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore hic dolor, assumenda voluptatibus vel vero, odio voluptas explicabo sunt temporibus ipsam magnam, blanditiis exercitationem quisquam rem sed non? Voluptatibus, dolor!</p>
-            </article>
-            <img src="images/pexels-philip-hevron-8085229.jpg" alt="city club football" class="story-photo side-photo">
+
+        <section class="headline">
+            <h1>Welcome to City Spport Club</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus fuga excepturi magnam nisi, sit commodi ipsum consequuntur possimus praesentium et dolores quo, exercitationem aliquam voluptates!</p>
+            <a class="register-btn" href="join.html">Register Now</a>      
+        </section>
+
+        <main class="cards">
+
+            <section class="news card">
+                <h3>News</h3>
+                <a href="news.html"><img src="images/sports-news-concept-collage.jpg" alt="news page"></a>
+                <h4>Latest News</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, veritatis Lorem ipsum dolor sit amet consectetur.</p>
+            </section>
+
+            <section class="media card">
+                <h3>Media</h3>
+                <a href="media.html"><img src="images/pexels-wallace-chuck-2834917.jpg" alt="media files"></a>
+                <h4>Recent Events</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, veritatis Lorem ipsum dolor sit amet consectetur.</p>
+            </section>
+
+            <section class="matches card">
+                <h3>Matches</h3>
+                <a href="matches.html"><img src="images/pexels-pixabay-159603.jpg" alt="match schedule and history"></a>
+                <h4>Match Sechedual</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, veritatis Lorem ipsum dolor sit amet consectetur.</p>
+            </section>
         </main>
+
     <footer>
         <div class="social-media">
             <span>Follow us on</span><br>
@@ -64,34 +80,3 @@
     </footer>
     </body>
 </html>
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Mesaieed Sport club</title>
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-    </head>
-    <body>
-        <header>
-          <h1>Document Heading</h1>
-        </header>
-        <main>
-          <article>
-            <h2>This is the heading of the main section</h2>
-            <p>This is a paragraph of text.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, nostrum consequatur voluptatem ut explicabo consectetur officiis, alias aspernatur placeat dignissimos recusandae numquam dolore deserunt fugiat quisquam officia praesentium id nihil.</p>
-          </article>
-          <aside>Here is the aside</aside>
-        </main>
-        <nav>
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/blog">Blog</a>
-          <a href="/jobs">Careers</a>
-          <a href="/contact">Contact Us</a>
-        </nav>
-        <footer>
-            <p>Copyright &#169; 2017 <a href="/">My Site</a></p>
-        </footer>
-      </body>
-</html> -->
