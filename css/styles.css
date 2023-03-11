@@ -34,7 +34,6 @@ header{
 }
 
 .mobile-menu{
-    border-bottom: solid 1px rgb(44, 44, 44);
     font-size: 2rem;
     display: flex;
     justify-content: space-between;
@@ -65,10 +64,31 @@ footer ul{
 .front-page-photo{
     background-color: rgb(123, 182, 206);
     width: 90%;
+    height: 20%;
     display: block;
     margin: 0 auto;
 }
-
+.side-story{
+    background-color: white;
+}
+.side-story p{
+    text-align: left;
+}
+.side-story h2{
+    text-align: center;
+}
+footer{
+    background-color: rgb(110, 107, 107);
+    color: white;
+    line-height: 1.5;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+span{
+    font-size: 1.5rem;
+}
 /* .main-menu li:hover{
     background-color:rgb(44, 44, 44);
 } */
