@@ -1,0 +1,39 @@
+<html lang="en">
+    <head>
+        <title>Mesaieed Sport club</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="mobile-menu">
+                <i class='fa fa-bars' id="menu-icon" onclick="toggleMenu()"></i>
+                <a class="home-icon" href="index.html"><i class="fa fa-home"></i></a>
+            </div>
+            <script>
+                function toggleMenu(){
+                  var mainMenu = document.getElementsByClassName("main-menu")[0];
+                  var mobileMenu = document.getElementsByClassName("mobile-menu")[0];
+                  if (mainMenu.style.display === "none") {
+                    mainMenu.style.display = "block";
+                    mobileMenu.style.display = "none";
+                  } 
+                  else {
+                    mainMenu.style.display = "none";
+                    mobileMenu.style.display = "flex";
+                  }
+                }
+            </script>
+           <nav>
+                <ul class="main-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="matches.html">Matches</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="media.html">Media</a></li>
+                </ul>
+            </nav>
+            <!-- <a href="" class="subscribe-btn">Subscribe</a> -->
+        </header>
+    </body>
+</html>

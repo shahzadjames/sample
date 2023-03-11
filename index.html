@@ -8,29 +8,29 @@
         <header>
             <div class="mobile-menu">
                 <i class='fa fa-bars' id="menu-icon" onclick="toggleMenu()"></i>
-                <a class="home-icon" href="#"><i class="fa fa-home"></i></a>
+                <a class="home-icon" href="index.html"><i class="fa fa-home"></i></a>
             </div>
             <script>
-                function toggleMenu(){
-                  var mainMenu = document.getElementsByClassName("main-menu")[0];
-                  var mobileMenu = document.getElementsByClassName("mobile-menu")[0];
-                  if (mainMenu.style.display === "none") {
-                    mainMenu.style.display = "block";
-                    mobileMenu.style.display = "none";
-                  } 
-                  else {
-                    mainMenu.style.display = "none";
-                    mobileMenu.style.display = "flex";
-                  }
+                function toggleMenu(){    
+                    var mainMenu = document.getElementsByClassName("main-menu")[0];
+                    var icon = document.getElementById("menu-icon");
+                    if (mainMenu.style.display === "block"){
+                        mainMenu.style.display = "none";
+                        icon.className = 'fa fa-bars';
+                    } 
+                    else {
+                        mainMenu.style.display = "block";
+                        icon.className = 'fa fa-close';
+                    }
                 }
             </script>
-           <nav>
-                <ul class="main-menu">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">News</a></li>
-                    <li><a href="">Matchs</a></li>
-                    <li><a href="">Join</a></li>
-                    <li><a href="">Media</a></li>
+           <nav class="main-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="matches.html">Matches</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="media.html">Media</a></li>
                 </ul>
             </nav>
             <!-- <a href="" class="subscribe-btn">Subscribe</a> -->
