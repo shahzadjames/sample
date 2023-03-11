@@ -1,8 +1,16 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Mesaieed Sport club</title>
+        <meta charset="utf-8">
+        <meta name="description" content="This website is about Fictitious spport club ">
+        <meta name="author" content="Shahzad James">
+        <meta name="keywords" content="spport, football, news, matches, spport analysis">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="refresh" content="600">
+        <title>Fictitious Sport club</title>
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="js/main.js"></script>
     </head>
     <body>
         <header>
@@ -10,20 +18,6 @@
                 <i class='fa fa-bars' id="menu-icon" onclick="toggleMenu()"></i>
                 <a class="home-icon" href="index.html"><i class="fa fa-home"></i></a>
             </div>
-            <script>
-                function toggleMenu(){    
-                    var mainMenu = document.getElementsByClassName("main-menu")[0];
-                    var icon = document.getElementById("menu-icon");
-                    if (mainMenu.style.display === "block"){
-                        mainMenu.style.display = "none";
-                        icon.className = 'fa fa-bars';
-                    } 
-                    else {
-                        mainMenu.style.display = "block";
-                        icon.className = 'fa fa-close';
-                    }
-                }
-            </script>
            <nav class="main-menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -31,10 +25,22 @@
                     <li><a href="matches.html">Matches</a></li>
                     <li><a href="join.html">Join</a></li>
                     <li><a href="media.html">Media</a></li>
+                    <li><a href="Report.html">Report</a></li>
+                    <li id="btn"><a href="">Subscribe</a></li>
                 </ul>
             </nav>
-            <!-- <a href="" class="subscribe-btn">Subscribe</a> -->
         </header>
+        <main>
+            
+        </main>
+
+    <footer>
+        <span>Connect with us</span>
+        <br>
+        <i class="fa fa-whatsapp"></i>
+        <i class="fa fa-twitter-square"></i>
+        <i class="fa fa-facebook-official"></i>
+    </footer>
     </body>
 </html>
 

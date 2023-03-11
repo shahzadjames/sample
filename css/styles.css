@@ -42,8 +42,14 @@ header a{
     padding: 16px;
 }
 
+#btn{
+    background-color: rgb(245, 56, 56);
+}
 
-
+footer ul{
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+}
 
 /* .main-menu li:hover{
     background-color:rgb(44, 44, 44);
