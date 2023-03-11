@@ -1,0 +1,145 @@
+/* css reset to prevent browser default style */
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+/* default small screen css style start from here mobile first design */
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  background-color: rgb(222, 222, 216);
+}
+main{
+  padding: 0.5rem;
+}
+p, h1, h2{
+  text-align: left;
+  padding: 0.5rem;
+}
+
+
+header{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    line-height: 1.5;
+    position: sticky;
+    top:0;
+}
+header a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.main-menu{
+    display: none;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.main-menu ul{
+  list-style: none;
+}
+.main-menu li{
+  border-bottom: solid 1px rgb(44, 44, 44);
+  padding: 8px;
+}
+#subscribe-btn{
+  background-color: rgb(245, 56, 56);
+}
+
+.mobile-menu{
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    margin: 0 16px;
+}
+
+.story-photo{
+  width: 100%;
+  height: 20%;
+  display: block;
+}
+.main{
+  padding: 0.5rem;
+}
+
+/* .front-page-photo{
+    background-color: rgb(123, 182, 206);
+    width: 90%;
+    height: 20%;
+    display: block;
+    margin: 0 auto;
+}
+.side-story{
+    background-color: white;
+}
+.side-story p{
+    text-align: left;
+}
+.side-story h2{
+    text-align: center;
+} */
+footer{
+    background-color: rgb(110, 107, 107);
+    color: white;
+    border-top: solid 1px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+footer a{
+  color: inherit;
+  font-size: 2rem;
+  margin-right: 10px;
+  margin-top: 16px;
+}
+.social-media{
+    margin-left: 10px;
+}
+.contact{
+  margin-right: 10px;
+}
+
+@media only screen and (min-width: 580px){
+  .mobile-menu{
+    margin:0;
+    padding: 0px;
+  }
+  #menu-icon{
+    display: none;
+  }
+  .home-icon{
+    display: none;
+  }
+  
+  
+  .main-menu{
+    display: block;
+    font-size: 1rem;
+    }
+  .main-menu ul{
+    display: flex;
+    justify-content: start;
+  }
+  .main-menu li{
+    border-bottom: none;
+    padding: 5px 15px;
+    border-radius: 2px;
+    margin-bottom: 16px;
+  }
+  .main-menu li:hover{
+      background-color: rgba(85, 84, 84, 1);
+  }
+  #subscribe-btn{
+    margin-left: auto;
+    margin-right: 16px;
+  }
+  #subscribe-btn:hover{
+    background-color: rgba(245, 56, 56, 0.8);
+  }
+}

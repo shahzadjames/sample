@@ -1,36 +1,52 @@
+/* css reset to prevent browser default style */
 *{
     margin: 0;
     padding: 0; 
     box-sizing: border-box;
 }
-header, footer, article{
-    padding:0.5rem;
+/* default small screen css style start from here mobile first design */
+html {
+  font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    background-color: rgb(222, 222, 216);
+  background-color: rgb(222, 222, 216);
 }
-html {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-p ,h1{
-    text-align: center;
-    padding: 0.5rem;
+main{
+  padding: 0.5rem;
 }
+p, h1, h2{
+  text-align: left;
+  padding: 0.5rem;
+}
+
 
 header{
     background-color: rgb(0, 0, 0);
     color: white;
     line-height: 1.5;
-    /* padding: 60 0px; */
-    /* height: 5%; */
+    position: sticky;
+    top:0;
 }
+header a{
+  text-decoration: none;
+  color: inherit;
+}
+
 
 .main-menu{
     display: none;
-    /* margin: 0px; */
-    list-style: none;
     text-align: center;
     font-size: 1.5rem;
+}
+.main-menu ul{
+  list-style: none;
+}
+.main-menu li{
+  border-bottom: solid 1px rgb(44, 44, 44);
+  padding: 8px;
+}
+#subscribe-btn{
+  background-color: rgb(245, 56, 56);
 }
 
 .mobile-menu{
@@ -42,26 +58,16 @@ header{
     margin: 0 16px;
 }
 
-header a{
-    text-decoration: none;
-    color: inherit;
+.story-photo{
+  width: 100%;
+  height: 20%;
+  display: block;
 }
-.main-menu li{
-    border-bottom: solid 1px rgb(44, 44, 44);
-    padding: 8px;
-}
-
-#btn{
-    background-color: rgb(245, 56, 56);
+.main{
+  padding: 0.5rem;
 }
 
-footer ul{
-    /* display: flex; */
-    /* justify-content: space-evenly; */
-}
-
-
-.front-page-photo{
+/* .front-page-photo{
     background-color: rgb(123, 182, 206);
     width: 90%;
     height: 20%;
@@ -76,19 +82,136 @@ footer ul{
 }
 .side-story h2{
     text-align: center;
-}
+} */
 footer{
     background-color: rgb(110, 107, 107);
     color: white;
-    line-height: 1.5;
-    font-size: 2rem;
+    border-top: solid 1px black;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    padding: 10px;
+  }
+footer a{
+  color: inherit;
+  font-size: 2rem;
+  margin-right: 10px;
+  margin-top: 16px;
 }
-span{
-    font-size: 1.5rem;
+.social-media{
+    margin-left: 10px;
 }
+.contact{
+  margin-right: 10px;
+}
+
+@media only screen and (min-width: 580px){
+  .mobile-menu{
+    margin:0;
+    padding: 0px;
+  }
+  #menu-icon{
+    display: none;
+  }
+  .home-icon{
+    display: none;
+  }
+  
+  
+  .main-menu{
+    display: block;
+    font-size: 1rem;
+    }
+  .main-menu ul{
+    display: flex;
+    justify-content: start;
+  }
+  .main-menu li{
+    border-bottom: none;
+    padding: 5px 15px;
+    border-radius: 2px;
+    margin-bottom: 16px;
+  }
+  .main-menu li:hover{
+      background-color: rgba(85, 84, 84, 1);
+  }
+  #subscribe-btn{
+    margin-left: auto;
+    margin-right: 16px;
+  }
+  #subscribe-btn:hover{
+    background-color: rgba(245, 56, 56, 0.8);
+  }
+}
+@media only screen and (min-width: 900px){
+  #subscribe-btn{
+    margin-left: auto;
+    margin-right: 40px;
+  }
+  .main-menu{
+    display: block;
+    font-size: 1.25rem;
+    }
+  
+  .social-media{
+    margin-left: 32px;
+  }
+  .contact{
+    margin-right: 32px;
+  }
+
+
+  .story-photo{
+    display: block;
+    width: 500px;
+    height: 500px
+  }
+
+  main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+  }
+  .main-story{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+  .main-photo{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    margin-right: 10px;
+  }
+
+  .side-story{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 8;
+  }
+  .side-photo{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 8;
+    margin-left: 10px;
+  }
+
+  
+}
+
+
+
+
+
+/* @media only screen and (min-width: 650px) and (max-width: 1010px){
+  .main-menu{
+    font-size: 2rem;
+  }
+} */
 /* .main-menu li:hover{
     background-color:rgb(44, 44, 44);
 } */

@@ -1,9 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-    </head>
-    <body>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, illum magnam, a, molestiae quaerat tempora voluptas obcaecati distinctio deserunt reprehenderit animi. Minima tempora aliquam quaerat beatae reprehenderit fuga quasi perferendis?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sed delectus nesciunt esse illum! Quod, numquam voluptas odio aut dicta illo! At, eligendi exercitationem. Est sapiente quaerat non autem veniam!</p>
-    </body>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+  justify-content:space-between;
+}
+
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  /* margin: 10px; */
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+ 
+}
+.third{
+    color:red;
+    margin-left: auto;
+    background-color: aqua;
+    /* order: 3; */
+}
+.second{
+    margin-left: auto;
+}
+ul{
+    display: flex;
+}
+</style>
+</head>
+<body>
+<h1>Flexible Boxes</h1>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ol>
+<p>Try to resize the browser window.</p>
+<p>A container with "flex-wrap: nowrap;" will never wrap its items.</p>
+<p><strong>Note:</strong> Flexbox is not supported in Internet Explorer 10 or earlier versions.</p>
+
+</body>
 </html>
