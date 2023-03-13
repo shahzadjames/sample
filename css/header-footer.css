@@ -1,3 +1,7 @@
+/***************************************************************/
+/* Code for header and footer */
+/***********************************************************/
+
 /* css reset to prevent browser default style */
 *{
     margin: 0;
@@ -13,6 +17,11 @@ body{
   /* font-size: 1rem; */
 }
 
+/*************************************************************************************/
+/*top navigation bar code start here */
+/* one bar for logo and one for menu item hidden by default*/
+/* sticky nav bar will remain visible while scrolling */
+/********************************************************************************/
 header{
     background-color: rgb(0, 0, 0);
     color: white;
@@ -20,26 +29,32 @@ header{
     position: sticky;
     top:0;
 }
+/* Nav bar link underline and color modification */
 header a{
   text-decoration: none;
   color: inherit;
 }
-
+/* Main menu default is hidden in mobile view */
 .main-menu{
     display: none;
     text-align: center;
     font-size: 1rem;
 }
+/* main nav bar are list item so ball should be removed from list ul */
 .main-menu ul{
   list-style: none;
 }
+/* links should be appear as button */
 .main-menu li{
   border-bottom: solid 1px rgb(44, 44, 44);
   padding: 8px;
 }
+/* subscription button should be highlited */
 #subscribe-btn{
   background-color: rgb(245, 56, 56);
 }
+
+/* mobile navigation bar decoration full width flex items */
 
 .mobile-menu{
     font-size: 2rem;
@@ -49,7 +64,11 @@ header a{
     padding: 8px;
     margin: 0 16px;
 }
-
+/*****************************************************************************************/
+/* footer code start here this footer will appear in every page*/
+/* footer for each page with address and social media information */
+/* address and social media links should be separated left and right */
+/***********************************************************************************/
 footer{
     background-color: rgb(110, 107, 107);
     color: white;
@@ -59,12 +78,14 @@ footer{
     align-items: center;
     padding: 10px;
   }
+  /* footer item margin between each other */
 footer a{
   color: inherit;
   font-size: 2rem;
   margin-right: 10px;
   margin-top: 16px;
 }
+/* footer items margin from both sides */
 .social-media{
     margin-left: 10px;
 }
@@ -72,26 +93,27 @@ footer a{
   margin-right: 10px;
 }
 
-.test{
-    width: 500px;
-    height: 500px;
-    background-color: aqua;
-    border: #deded8 10px solid;
-    margin: 10px;
-}
+
+/***************************************************************/
+/* Code for tablet view */
+/* main menu will be visible horizental */
+/***************************************************************/
 @media only screen and (min-width: 580px){
   .mobile-menu{
     margin:0;
     padding: 0px;
   }
+  /* mobile home icon will be hidden*/
   #menu-icon{
     display: none;
   }
+  
   .home-icon{
     display: none;
   }
+  /* main menu item will be visible now */
+  /* main menu items alighnment and visibilty */
   .main-menu{
-    display: initial;
     display: block;
     font-size: 1rem;
     }
@@ -119,6 +141,10 @@ footer a{
   }
 
 }
+/***************************************************************/
+/* Code for desktop view*/
+/* main menu will be visible horizenatal dirction */
+/***************************************************************/
 @media only screen and (min-width: 900px){
   #subscribe-btn{
     margin-left: auto;

@@ -1,4 +1,5 @@
 
+// toggel function of main menu item and auto hide 
 function toggleMenu(){    
     var mainMenu = document.getElementsByClassName("main-menu")[0];
     var icon = document.getElementById("menu-icon");

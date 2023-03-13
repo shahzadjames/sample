@@ -1,4 +1,8 @@
 
+/***************************************************************/
+/* css code for otherthan header and footer are here */
+/***********************************************************/
+/* default header style */
 h1, h2, h3, h4, h5 {
 color: rgb(100, 136, 128);
 margin: 0.5rem;
@@ -6,7 +10,11 @@ margin: 0.5rem;
 p{
   margin: 0.5rem;
 }
-
+/***************************************************************/
+/* home page code start from here */
+/*  there will be four horizental blocks with photo and links */
+/***************************************************************/
+/* above the galley header and paragrah appear as headline */
 .headline{
 color: rgb(116, 111, 111);
 line-height: 1.5;
@@ -18,6 +26,7 @@ border-bottom: solid 1px #bebebc;
 .headline p{
 padding: 0.5rem;
 }
+/* Registation button will be visible and highlighted with hover effect */
 .register-btn{
 display: inline-block;
 color: rgb(116, 111, 111);
@@ -29,15 +38,13 @@ text-decoration: none;
 padding: 10px 30px
 }
 
-
+/* Code for main item of home pages */
 .gallery{
-/* background-color: rgb(255, 255, 246); */
 width: 100%;
-/* max-width: 1245; */
 margin: 0 auto;
 padding: 0.5rem;
-/* font-size: 1.5rem; */
 }
+/* gallery image as block level and width no more than 100 */
 .gallery img{
 display: block;
 width: 100%;
@@ -49,24 +56,27 @@ padding: 8px;
 text-align: left;
 }
 
+/***************************************************************/
+/* code registration form appear here*/
+/***************************************************************/
+form{
+  padding: 30px;
+  max-width:500px;
+}
 
-
+/* text link and nested under label so alighnment should be here */
 label{
   display: block;
   margin: 16px;
   text-align: right;
 }
-
+/* margin betwee form field type */
 fieldset{
   padding: 16px;
-  /* width: 100%; */
   margin-bottom: 10px;
   text-align: left;
 }
-form{
-  padding: 30px;
-  max-width:500px;
-}
+/* form submit button decoration */
 #reg-form-btn{
   color: rgb(0,0,0);
   padding: 10px 32px;
@@ -76,8 +86,12 @@ form{
 #reg-form-btn :hover{
   background-color: rgb(116, 111, 111);
 }
+/***************************************************************/
+/* code for media page appear here */
+/***************************************************************/
 
-/*****************************************************************************/
+/* images container is div element and display will be as flex */
+/* image size should be fit inside container no overflow */
 .media-images {
   display: flex;
   width: 100%;
@@ -92,25 +106,28 @@ form{
 .img-box > img {
   width: 100%;
   height: 100%;
- 
   object-fit:contain; 
   transition: .5s;
 }
-
+/* hover effect of mouse over */
 .img-box:hover { flex: 1 1 50%; }
 .img-box:hover > img {
   width: 60%;
   height: 100%;
 }
-/*******************************************************************************************/
+/***************************************************************/
+/* Teamd page code start from here */
+/***************************************************************/
 
+
+/* team data is available in table form */
 table{
   border: solid 2px #f0eded;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   margin: 0 auto;
 }
-
+/* all colums alighn center and then first row aligh left */
 td{
     padding: 10px;
     text-align:center;
@@ -124,10 +141,10 @@ th{
     color: rgb(255, 255, 255);
 }
 
+/* row opacity for hight light during mouse over */
 tr{
     opacity: 0.7;
 }
-
 tr td:nth-child(1){
     text-align: left;
 }
@@ -135,23 +152,14 @@ tr td:nth-child(1){
 tr:hover{
     opacity: 1;
 }
-/*********************************************************************************************************************************************/
 
-
-
-
-
-
-
-
-
-
+/***************************************************************/
+/* Code for tablet view */
+/***************************************************************/
 @media only screen and (min-width: 580px){
 
+/* tablet view home page section as grid items */
 
-.card h3{
-  display: none;
-}
 .card{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -181,8 +189,12 @@ tr:hover{
 }
 
 }
-@media only screen and (min-width: 900px){
+/***************************************************************/
+/* Code for tablet view */
+/***************************************************************/
 
+@media only screen and (min-width: 900px){
+/* in  tablet view items will be as flex horizental directon like gallery */
 .card h3{
   display: block;
 }
